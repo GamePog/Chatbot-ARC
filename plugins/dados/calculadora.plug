@@ -1,0 +1,9 @@
+[Core]
+Name = Calculadora
+Module = calculadora
+
+[Documentation]
+Description = Resolver contas de mais, menor, vezes e dividir.
+
+[Python]
+Version = 3
