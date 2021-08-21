@@ -17,6 +17,9 @@ class Calculadora(BotPlugin):
 
     @botcmd(split_args_with=' ')
     def raio(self, msg, args):
+        """
+        cu
+        """
 
         try:
             texto = args[0].replace (",", ".")
