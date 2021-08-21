@@ -138,3 +138,10 @@ class Calculadora(BotPlugin):
         else:
             return "```\n" + Figlet(font='slant').renderText(str(round(numero8 * numero9, 2))) + "\n```"
 
+    @botcmd(split_args_with=' ')
+    def adele(self, msg, args):
+        """
+        Adele
+        """
+        return "Never mind, I'll find someone like you | I wish nothing but the best for you, too | Don't forget me,  I begged | I remember you said | Sometimes it lasts in love, but sometimes it hurts instead"
+
