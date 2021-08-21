@@ -14,12 +14,13 @@ class Calculadora(BotPlugin):
         Comandos do Bot.
         """
         yield "Para calcular a área de uma circulo, utilize o comando !ac <valor do raio>"
-        yield "Para calcular a circunferência de um circulo, utilize o comando !cc <valor do raio>"
         yield "Para calcular a área de um quadrado, utilize o comando !aq <valor do lado>"
+        yield "Para calcular a área do triângulo, utilize o comando !at <valor da base> <valor da altura>"
+        yield "Para calcular a área do retângulo, utilize o comando !ar <valor da base> <valor da altura>"
+        yield "Para calcular a circunferência do circulo, utilize o comando !cc <valor do raio>"
         yield "Para calcular o perímetro do quadrado, utilize o comando !pq <valor do lado>"
         yield "Para calcular o volume do cubo, utilize o comando !vc <valor do lado>"
         yield "Para calcular o volume da esfera, utilize o comando !ve <valor do raio>"
-        yield "Para calcular a área do triângulo, utilize o comando !at <valor da base> <valor da altura>"
 
     @botcmd(split_args_with=' ')
     def ac(self, msg, args):
@@ -120,3 +121,20 @@ class Calculadora(BotPlugin):
             return "Não é um número real"
         else:
             return "```\n" + Figlet(font='slant').renderText(str(round(numero6 * numero7 / 2, 2))) + "\n```"
+
+    @botcmd(split_args_with=' ')
+    def ar(self, msg, args):
+        """
+        Área Retângulo
+        """
+        
+        try:
+            texto = args[0].replace (",", ".")
+            texto2 = args[1].replace (",", ".")
+            numero8 = float(texto)
+            numero9 = float(texto2)
+        except:
+            return "Não é um número real"
+        else:
+            return "```\n" + Figlet(font='slant').renderText(str(round(numero8 * numero9, 2))) + "\n```"
+
