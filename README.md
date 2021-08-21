@@ -1,1 +1,1 @@
-O chatbot terá como função realizar tarefas de cálculo básico conforme valores anunciados pelo usuário.
+O bot terá como função realizar cálculos para o usuário com base em valores(variável) informada junta com o prefixo do comando.
