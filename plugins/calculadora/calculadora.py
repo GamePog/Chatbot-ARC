@@ -14,6 +14,8 @@ class Calculadora(BotPlugin):
         Comandos do Bot.
         """
         yield "Para calcular a área de uma circunferência, utilize o comando !raio <valor em metros>"
+        yield "Para calcular a circunferência de um circulo, utilize o comando !raio2 <valor em metros>"
+        yield "Para calcular a área de um quadrado, utilize o comando !lado <valor em metros>"
 
     @botcmd(split_args_with=' ')
     def raio(self, msg, args):
@@ -34,7 +36,7 @@ class Calculadora(BotPlugin):
         """
         u
         """
-        
+
         try:
             texto = args[0].replace (",", ".")
             numero1 = float(texto)
@@ -42,3 +44,17 @@ class Calculadora(BotPlugin):
             return "Não é um número real"
         else:
             return "```\n" + Figlet(font='slant').renderText(str(round(numero1 * numero1, 2))) + "\n```"
+
+    @botcmd(split_args_with=' ')
+    def raio2(self, msg, args):
+        """
+        s
+        """
+        
+        try:
+            texto = args[0].replace (",", ".")
+            numero2 = float(texto)
+        except:
+            return "Não é um número real"
+        else:
+            return "```\n" + Figlet(font='slant').renderText(str(round(2 * pi * numero2, 2))) + "\n```"
