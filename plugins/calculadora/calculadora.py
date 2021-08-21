@@ -17,9 +17,6 @@ class Calculadora(BotPlugin):
 
     @botcmd(split_args_with=' ')
     def raio(self, msg, args):
-        """
-        Calcula o raio de um círculo.
-        """
 
         try:
             texto = args[0].replace (",", ".")
@@ -28,3 +25,14 @@ class Calculadora(BotPlugin):
             return "Não é um número real"
         else:
             return "```\n" + Figlet(font='slant').renderText(str(round(numero * numero * pi, 2))) + "\n```"
+
+    @botcmd(split_args_with=' ')
+    def lado(self, msg, args):
+
+        try:
+            texto = args[0].replace (",", ".")
+            numero1 = float(texto)
+        except:
+            return "Não é um número real"
+        else:
+            return "```\n" + Figlet(font='slant').renderText(str(round(numero1 * numero1, 2))) + "\n```"
