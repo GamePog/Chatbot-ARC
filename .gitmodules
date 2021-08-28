@@ -1,3 +1,6 @@
 [submodule "backend/discord"]
 	path = backend/discord
 	url = https://github.com/gbin/err-backend-discord.git
+[submodule "discord"]
+	path = discord
+	url = https://github.com/gbin/err-backend-discord.git
