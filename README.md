@@ -2,9 +2,9 @@ O Chinese Rap Bot, apesar do nome, tem a função de cálcular algumas fórmulas
 
 O bot é feito pelos alunos da 8ª fase de telecomunicações do IFSC câmpus São José
 Sendo os mesmos:
-Bruno de Oliveira
+*Bruno de Oliveira
 Guilherme Ernzen Marçal
-Thiago barbieri
+Thiago barbieri*
 
 The Chinese Rap Bot, despite its name, has the function of calculating some specific formulas from the Python language, using GitPod, the bot is able to calculate some area formulas, as well as volume, taking as an example the area formulas the square, rectangle and other flat figures, as to the volume of spatial figures. 
 
